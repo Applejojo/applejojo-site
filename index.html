@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Applejojo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to AppleJojo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    p.subtitle {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #222;
+      color: #bbb;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <h1 style="text-align:center;">Welcome to Applejojo</h1>
-    <h2 style="text-align:center;">Home Decor Collection</h2>
-    <div class="gallery">
-        <div class="item">
-            <img src="images/pexels-photo-7144144.jpeg" alt="Decor 1">
-            <p>Modern Living Room</p>
-        </div>
-        <div class="item">
-            <img src="images/pexels-photo-2208208.jpeg" alt="Decor 2">
-            <p>Colorful Bookshelf</p>
-        </div>
-        <div class="item">
-            <img src="images/pexels-photo-3348348.jpeg" alt="Decor 3">
-            <p>White Kitchen</p>
-        </div>
-        <div class="item">
-            <img src="images/pexels-photo-2247743.jpeg" alt="Decor 4">
-            <p>Cozy Attic</p>
-        </div>
-        <div class="item">
-            <img src="images/photo-160058514340-b...a0c.jpeg" alt="Decor 5">
-            <p>Modern House Exterior</p>
 
-            <img src="images/pexels-photo-245208.jpeg" alt="photo 1">
-<img src="images/pexels-photo-271743.jpeg" alt="photo 2">
-<img src="images/pexels-photo-373548.jpeg" alt="photo 3">
-<img src="images/pexels-photo-706144.jpeg" alt="photo 4">
-<img src="images/photo-1600585154340-be6161a56a0c.jpeg" alt="photo 5">
+  <header>
+    <h1>AppleJojo</h1>
+    <p class="subtitle">Delight. Desire. Delivered.</p>
+  </header>
 
-        </div>
-    </div>
+  <section class="gallery">
+    <img src="images/pexels-photo-245208.jpeg" alt="pexels 1">
+    <img src="images/pexels-photo-271743.jpeg" alt="pexels 2">
+    <img src="images/pexels-photo-373548.jpeg" alt="pexels 3">
+    <img src="images/pexels-photo-706144.jpeg" alt="pexels 4">
+    <img src="images/photo-1600585154340-be6161a56a0c.jpeg" alt="photo 5">
+  </section>
+
+  <footer>
+    &copy; 2025 AppleJojo LLC. All rights reserved.
+  </footer>
+
 </body>
 </html>
