@@ -5,56 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AppleJojo</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Helvetica Neue', sans-serif;
       background-color: #fffbe6;
       color: #333;
-      line-height: 1.6;
     }
 
     header {
-      background-color: #ffcf40;
-      padding: 60px 20px 30px;
+      background-color: #ffcc00;
+      padding: 50px 20px;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     h1 {
       font-size: 3rem;
-      font-weight: bold;
-      letter-spacing: 1px;
+      margin: 0;
       color: #222;
     }
 
-    .tagline {
-      font-size: 1.2rem;
-      color: #444;
+    p.subtitle {
       margin-top: 10px;
+      font-size: 1.2rem;
+      color: #555;
     }
 
     .section {
-      padding: 50px 20px;
+      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
 
     .section h2 {
       font-size: 2rem;
-      margin-bottom: 20px;
       text-align: center;
-      color: #d48806;
+      color: #b27a00;
+      margin-bottom: 30px;
     }
 
     .about {
-      text-align: center;
       font-size: 1.1rem;
       color: #555;
+      text-align: center;
       max-width: 800px;
       margin: auto;
     }
@@ -67,16 +59,11 @@
     }
 
     .product {
-      background: #fffdf4;
+      background: #fffaf0;
       border-radius: 12px;
       padding: 10px;
-      box-shadow: 0 5px 12px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       text-align: center;
-    }
-
-    .product:hover {
-      transform: translateY(-5px);
     }
 
     .product img {
@@ -85,20 +72,20 @@
     }
 
     .product h3 {
-      margin-top: 15px;
+      margin-top: 12px;
       font-size: 1.1rem;
-      color: #d48806;
+      color: #b27a00;
     }
 
     .product p {
       font-size: 0.95rem;
       color: #555;
-      margin-top: 5px;
+      margin-top: 4px;
     }
 
     .contact, .social {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
     }
 
     .contact a {
@@ -108,17 +95,18 @@
     }
 
     .social a {
-      margin: 0 10px;
+      margin: 0 12px;
+      font-size: 1.2rem;
+      color: #b27a00;
       text-decoration: none;
-      color: #d48806;
-      font-size: 1.4rem;
     }
 
     footer {
+      margin-top: 50px;
       text-align: center;
-      padding: 30px 10px;
+      padding: 20px;
       font-size: 0.9rem;
-      color: #888;
+      color: #999;
     }
   </style>
 </head>
@@ -126,57 +114,57 @@
 
   <header>
     <h1>AppleJojo</h1>
-    <p class="tagline">Delight. Desire. Delivered.</p>
+    <p class="subtitle">Delight. Desire. Delivered.</p>
   </header>
 
   <section class="section">
-    <h2>About AppleJojo</h2>
+    <h2>About Us</h2>
     <p class="about">
-      AppleJojo 是一个注重隐私、高质量与情趣体验的成人用品品牌。我们致力于将最舒适、最优雅的选择带给每一个追求自我愉悦与浪漫生活的你。
+      AppleJojo 是一个专注于私密愉悦用品的品牌。我们提供高品质、外观优雅、隐私保障的产品，服务于每一位追求生活情趣与自我愉悦的人群。
     </p>
   </section>
 
   <section class="section">
-    <h2>Our Products</h2>
+    <h2>Featured Products</h2>
     <div class="gallery">
       <div class="product">
         <img src="images/pexels-photo-245208.jpeg" alt="Soft Pink Wand">
         <h3>Soft Pink Wand</h3>
-        <p>温柔静音震动，适合入门和情侣共用。</p>
+        <p>温柔静音震动，适合入门体验。</p>
       </div>
       <div class="product">
         <img src="images/pexels-photo-271743.jpeg" alt="Sleek Black Vibe">
         <h3>Sleek Black Vibe</h3>
-        <p>沉稳低调的外形，功能强悍，极致快感。</p>
+        <p>沉稳设计，震感强烈，释放快感。</p>
       </div>
       <div class="product">
         <img src="images/pexels-photo-373548.jpeg" alt="Glow Bullet Mini">
         <h3>Glow Bullet Mini</h3>
-        <p>迷你体积，便携隐藏，功能不减。</p>
+        <p>小巧外观，强劲输出，随时陪伴。</p>
       </div>
       <div class="product">
         <img src="images/pexels-photo-706144.jpeg" alt="Luxury Rose Massager">
         <h3>Luxury Rose Massager</h3>
-        <p>热门花型设计，深度打击快感点。</p>
+        <p>花型外观，广受喜爱，贴合人体。</p>
       </div>
       <div class="product">
         <img src="images/photo-1600585154340-be6161a56a0c.jpeg" alt="Silky Curve Wand">
         <h3>Silky Curve Wand</h3>
-        <p>顺滑曲线贴合肌肤，支持多频震动。</p>
+        <p>顺滑曲线，温润手感，多频调节。</p>
       </div>
     </div>
   </section>
 
   <section class="section contact">
     <h2>Contact Us</h2>
-    <p>欢迎合作与咨询：<a href="mailto:contact@applejojo.com">contact@applejojo.com</a></p>
+    <p>商务合作 & 客服：<a href="mailto:contact@applejojo.com">contact@applejojo.com</a></p>
   </section>
 
   <section class="section social">
     <h2>Follow Us</h2>
     <p>
-      <a href="#">Instagram</a> |
-      <a href="#">TikTok</a> |
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
       <a href="#">小红书</a>
     </p>
   </section>
