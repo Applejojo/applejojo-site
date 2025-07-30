@@ -3,58 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to AppleJojo</title>
+  <title>AppleJojo</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-      background-color: #f7f7f7;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #000;
+      color: #fff;
       text-align: center;
     }
 
     header {
-      background-color: #111;
-      color: white;
-      padding: 2rem 1rem;
+      padding: 60px 20px 30px;
     }
 
     h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #fff;
     }
 
-    p.subtitle {
-      margin: 0.5rem 0 0;
+    .tagline {
       font-size: 1.2rem;
       color: #ccc;
+      margin-top: 10px;
     }
 
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
+      padding: 40px 20px;
     }
 
     .gallery img {
-      width: 300px;
+      width: 100%;
       height: auto;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+      box-shadow: 0 10px 20px rgba(255,255,255,0.05);
+      transition: transform 0.4s ease;
     }
 
     .gallery img:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
     }
 
     footer {
-      background-color: #222;
-      color: #bbb;
-      padding: 1rem;
+      padding: 30px 20px;
       font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
@@ -62,19 +71,19 @@
 
   <header>
     <h1>AppleJojo</h1>
-    <p class="subtitle">Delight. Desire. Delivered.</p>
+    <p class="tagline">Pleasure. Privacy. Power.</p>
   </header>
 
   <section class="gallery">
-    <img src="images/pexels-photo-245208.jpeg" alt="pexels 1">
-    <img src="images/pexels-photo-271743.jpeg" alt="pexels 2">
-    <img src="images/pexels-photo-373548.jpeg" alt="pexels 3">
-    <img src="images/pexels-photo-706144.jpeg" alt="pexels 4">
-    <img src="images/photo-1600585154340-be6161a56a0c.jpeg" alt="photo 5">
+    <img src="images/pexels-photo-245208.jpeg" alt="product 1">
+    <img src="images/pexels-photo-271743.jpeg" alt="product 2">
+    <img src="images/pexels-photo-373548.jpeg" alt="product 3">
+    <img src="images/pexels-photo-706144.jpeg" alt="product 4">
+    <img src="images/photo-1600585154340-be6161a56a0c.jpeg" alt="product 5">
   </section>
 
   <footer>
-    &copy; 2025 AppleJojo LLC. All rights reserved.
+    &copy; 2025 AppleJojo LLC. Sensuality Delivered.
   </footer>
 
 </body>
