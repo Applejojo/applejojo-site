@@ -8,24 +8,31 @@
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      overflow: hidden;
       font-family: 'Helvetica Neue', sans-serif;
+      scroll-behavior: smooth;
     }
 
     body {
+      background-color: #fffbe6;
+      color: #333;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
       background: url('images/pexels-photo-245208.jpeg') center center / cover no-repeat;
       position: relative;
       color: white;
     }
 
-    .overlay {
+    .hero::before {
+      content: '';
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.5); /* 半透明黑色滤镜 */
+      background: rgba(0, 0, 0, 0.5);
     }
 
-    .content {
+    .hero-content {
       position: relative;
       z-index: 1;
       height: 100%;
@@ -34,55 +41,150 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      padding: 0 20px;
     }
 
-    h1 {
-      font-size: 3.5rem;
+    .hero h1 {
+      font-size: 4rem;
       margin: 0;
       letter-spacing: 2px;
     }
 
-    p {
-      font-size: 1.3rem;
+    .hero p {
+      font-size: 1.5rem;
       margin-top: 1rem;
-      color: #f2f2f2;
+      color: #eee;
     }
 
-    .scroll-indicator {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+    .btn-scroll {
+      margin-top: 2rem;
+      padding: 12px 28px;
+      font-size: 1rem;
+      border: 2px solid #ffcc00;
+      background: transparent;
+      color: #ffcc00;
+      cursor: pointer;
+      transition: background 0.3s;
+      border-radius: 30px;
+    }
+
+    .btn-scroll:hover {
+      background: #ffcc00;
+      color: #000;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.4rem;
+      text-align: center;
+      color: #b27a00;
+      margin-bottom: 30px;
+    }
+
+    .about {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: center;
+      color: #555;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    .social {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .social a {
+      margin: 0 15px;
+      text-decoration: none;
       font-size: 1.2rem;
-      color: #ccc;
-      animation: bounce 2s infinite;
+      color: #d48806;
     }
 
-    @keyframes bounce {
-      0%, 100% { transform: translate(-50%, 0); }
-      50% { transform: translate(-50%, 10px); }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #aaa;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 600px) {
-      h1 {
+      .hero h1 {
         font-size: 2.2rem;
       }
-      p {
+      .hero p {
         font-size: 1rem;
+      }
+      .btn-scroll {
+        font-size: 0.9rem;
+        padding: 10px 20px;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="overlay"></div>
-
-  <div class="content">
-    <h1>APPLEJOJO</h1>
-    <p>Delight. Desire. Delivered.</p>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>APPLEJOJO</h1>
+      <p>Delight. Desire. Delivered.</p>
+      <a href="#about"><button class="btn-scroll">Explore More</button></a>
+    </div>
   </div>
 
-  <div class="scroll-indicator">▼</div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p class="about">
+      AppleJojo 我们倡导现代生活方式中对美、爱与探索的自由表达。
+    </p>
+  </section>
+
+  <section>
+    <h2>Our Vibe</h2>
+    <div class="gallery">
+      <img src="images/pexels-photo-271743.jpeg" alt="Vibe 1">
+      <img src="images/pexels-photo-373548.jpeg" alt="Vibe 2">
+      <img src="images/pexels-photo-706144.jpeg" alt="Vibe 3">
+      <img src="images/photo-1600585154340-be6161a56a0c.jpeg" alt="Vibe 4">
+    </div>
+  </section>
+
+  <section class="social">
+    <h2>Follow Us</h2>
+    <p>
+      <a href="#">Instagram</a> |
+      <a href="#">TikTok</a> |
+      <a href="#">小红书</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 AppleJojo LLC. Sensuality Delivered.
+  </footer>
 
 </body>
 </html>
